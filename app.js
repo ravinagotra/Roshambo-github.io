@@ -16,6 +16,7 @@ const drow = ()=>
 {
     console.log("game was draw");
     msg.innerText="Game was drow, play again.";
+    msg.style.backgroundColor = "#081b31";
 };
 const showwinner =(userwin, userchoice, compchoice) =>
     {
@@ -24,15 +25,16 @@ const showwinner =(userwin, userchoice, compchoice) =>
             userpara.innerText = userscore;
             console.log("you win!");
             msg.innerText = `you win ${userchoice} beats ${compchoice} `;
-            msg.style.backgroundcolor = "green";
+            msg.style.backgroundColor = "green";
         }
         else
         {   compscore++;
             comppara.innerText = compscore;
             console.log("computer win");
             msg.innerText= `you loss ${compchoice} beats ${userchoice}`;
-            msg.style.backgroundcolor = "red";
+            msg.style.backgroundColor = "red";
         }
+    
     };
 
 
